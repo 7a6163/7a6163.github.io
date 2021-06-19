@@ -11,8 +11,6 @@ summary = "DNS Override in DHCP Mode"
 原因是 Vultr DNS 會不定期爛掉，一個新的 instance 預設是 DHCP。發 Ticket 去問客服，他會教你如何採用固定 IP 配置。
 不過如果不想跟客服周旋，可以自己 Override DNS 設定。
 
-<!--more-->
-
 `
 $ cat /etc/network/interfaces #確認 interface
 `
