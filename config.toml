@@ -33,3 +33,8 @@ last_page = "Last Page"
 [extra.social]
 github = "7a6163"
 twitter = "7a6163"
+
+[extra.comment.utterances]
+repo = "7a6163/7a6163.github.io"
+theme = "github-light"
+
