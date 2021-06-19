@@ -36,5 +36,5 @@ twitter = "7a6163"
 
 [extra.comment.utterances]
 repo = "7a6163/7a6163.github.io"
+issue_term = "pathname"
 theme = "github-light"
-
