@@ -8,10 +8,11 @@ compile_sass = true
 build_search_index = true
 
 theme = "anatole-zola"
-
 title = "Dev Note"
 description = "Aim for the impossible"
 default_language = "en"
+
+generate_rss = true
 
 [markdown]
 # Whether to do syntax highlighting
