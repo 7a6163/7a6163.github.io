@@ -22,7 +22,7 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 
-[translations.en]
+[languages.en.translations]
 about = "About"
 home = "Home"
 tags = "Tags"
@@ -30,6 +30,7 @@ archive = "Archive"
 links = "Links"
 next_page = "Next Page"
 last_page = "Last Page"
+date_format = "%d-%m-%Y"
 
 [extra.social]
 github = "7a6163"
