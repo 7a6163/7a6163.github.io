@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://7a6163.github.io/images/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://7a6163.github.io/images/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://7a6163.github.io/images/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://7a6163.github.io/images/apple-touch-icon-57x57.png"/>
+  <link rel="short icon" href="https://7a6163.github.io/images/favicon.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://7a6163.github.io/style.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <title> • pioCTF - caas</title>
+  
+
+  
+  
+</head>
+<body>
+<div id="sidebar" class="animated fadeInDown">
+  <div class="logo-title">
+    <div class="title">
+      <img src=https://7a6163.github.io/images/logo@2x.png style="width:127px;" alt="logo"/>
+      <h3><a href="https://7a6163.github.io/"></a></h3>
+      <div class="description">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <ul class="social-links"><li><a href="https://github.com/7a6163"><i class="fab fa-github"></i></a></li><li><a href="https://twitter.com/7a6163"><i class="fab fa-twitter"></i></a></li>
+    
+  </ul>
+  <div class="footer">
+    
+    <span>Designed by </span><a href="https://www.caicai.me">CaiCai</a>
+    <div class="by_zola"><a href="https://www.getzola.org/" target="_blank">Proudly published with Zola!</a></div>
+    
+  </div>
+</div>
+<div id="main">
+  <div class="page-top animated fadeInDown">
+    <div class="nav">
+      <li><a  href="https://7a6163.github.io/">Home</a></li><li><a  href="https://7a6163.github.io/about/">About</a></li><li><a  href="https://7a6163.github.io/archive/">Archive</a></li></div>
+    <div class="information">
+      <div class="back_btn">
+        <li><a onclick="window.history.go(-1)" ><i class="fas fa-chevron-left"></i></a></li>
+      </div>
+      <div class="avatar"><img src="https://7a6163.github.io/images/avatar.jpg"></div>
+    </div>
+  </div>
+  <div class="autopagerize_page_element">
+    <div class="content">
+    
+<article class="post animated fadeInDown">
+  <h1><a href="https:&#x2F;&#x2F;7a6163.github.io&#x2F;picoctf-caas&#x2F;">pioCTF - caas</a></h1>
+  
+  <div class="post-content"><p><img src="https://7a6163.github.io/assets//images/20210703230955.png" alt="" /></p>
+<p><code>https://picoctf/cowsay/{message}</code></p>
+<p>蠻簡單的一題，一隻牛會說出您輸入的訊息。這題有提供 index.js，不過我沒注意到就直接解了。</p>
+<p>首先思維要猜 Flag 在哪，從牛會講話的模式來看， Flag 應該是一個檔案，要藉由牛的嘴巴說出來。</p>
+<p><code>`ls`</code></p>
+<p>會看到一這個目錄的資料夾，然後會看到 flag 的檔案，還故意拼錯檔名。</p>
+<p><code>`cat falg.txt`</code></p>
+<p>Flag 就到手了，有興趣可以看一下他們的題目應該都是用 Docker 包裝，是不是可以 container escape attack 好像可以研究看看！</p>
+</div>
+  <div class="post-footer">
+    <div class="meta">
+      <div class="info">
+        
+          <i class="far fa-sun"></i><span class="date">03-07-2021</span>
+        
+        
+          <i class="fas fa-tags"></i>
+          
+            <a class="tag" href="https://7a6163.github.io/tags/ctf">&nbsp;ctf</a>
+          
+        
+      </div>
+    </div>
+  </div>
+</article>
+<div class="share">
+  <div class="weibo">
+    <a class="fab fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a>
+  </div>
+  <div class="twitter">
+    <a class="fab fa-twitter" href="http://twitter.com/share?text=pioCTF - caas&url=https:&#x2F;&#x2F;7a6163.github.io&#x2F;picoctf-caas&hashtags=ctf"></a>
+  </div>
+</div>
+
+
+
+
+
+  <script src="https://utteranc.es/client.js"
+    repo="7a6163&#x2F;7a6163.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
